@@ -38,3 +38,5 @@ P16
     HAVING accounts_per_product = MAX(accounts_per_product)
     
 这个查询语句通过AS，写得相当优雅，易懂。
+
+-EOF-
