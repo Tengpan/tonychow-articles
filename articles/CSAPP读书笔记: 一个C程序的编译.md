@@ -4,7 +4,7 @@ CSAPP中，1.2节讲到了程序的编译:
 
 程序由其他程序翻译成不同的形式，其实看下面这张图应该可以很清晰地了解上面这一句：
 
-![c程序编译](images/compliation.jpg)
+![c程序编译](images/compilation.jpg)
 
 上图是一个hello的c程序由gcc编译器从源码文件hello.c中读取内容并将其翻译成为一个可执行的对象文件hello的过程。这个过程包含了几个阶段：
 
