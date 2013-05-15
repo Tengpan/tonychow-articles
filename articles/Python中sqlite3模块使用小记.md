@@ -65,7 +65,7 @@ sqlite3模块的使用很简单，如下这段测试代码，创建一个person�
 
 结果依旧是抛出了同样的异常。再仔细看下，漏了个','，于是加上：
 
-    c.execute('select * from person where p_name = ?', ('tony,'))
+    c.execute('select * from person where p_name = ?', ('tony',))
 
 这次终于得到最终的结果了,其中的字符为unicode类型：
 
@@ -133,7 +133,7 @@ sqlite3模块的使用很简单，如下这段测试代码，创建一个person�
 
 所以如果那一行查询执行改为：
 
-    c.execute('select * from person where p_name = ?', ['tony,'])
+    c.execute('select * from person where p_name = ?', ['tony'])
 
 同样也是可以执行成功的。
 
